@@ -20,7 +20,7 @@ public class Professeur extends Personne {
     @Override
     public boolean equals(Object o) {
         Professeur other = (Professeur)o;
-        return other.salaire == salaire && other.getNom() == getNom();
+        return other.salaire == salaire && other.getNom().equals(getNom());
     }
 
     @Override
